@@ -162,10 +162,8 @@ $OUTPUT->flashMessages();
   <a href="<?= $CFG->wwwroot.'/settings/' ?>" class="btn btn-default">My Settings</a>
 </p>
 <p>
-If you are a teacher and want to use the interactive elements on this web
-site using IMS Learning Tools Interoperability, you can request a key
-from this page.  Please include a description of how you are
-planning on using your key.
+If you are a chemistry professor or intructor and want to use the OpenOChem cloud tools, you can request a key
+from this page.
 </p>
 <?php if ( isset($CFG->google_classroom_secret) ) { ?>
 <p>
@@ -183,10 +181,19 @@ connect to Google Classroom and install tools.
         <h4 class="modal-title">Request an API Key</h4>
       </div>
       <div class="modal-body">
-            <p>Please how you will be using the key below (i.e. the course you are
-            teaching and the school where you are teaching).
-            Students do not need a key to use this site.</p>
+            
+            <p>In the comments section below, please indicate
+            
+            <ol>
+		  <li>What kind of institution do you work for. College/University or K-12</li>
+		  <li>What country is it located in.</li>
+		  <li>Name of your institution.</li>
+		  <li>The url of your institutions website indicating you are an instructor.  This could be a school directory, a class schedule, a department website, or a faculty website.</li>
+		  <li>A Short description of how you plan to use OpenOChem Cloud Tools.</li>
+            </ol>
+            
             </p>
+            
             <div class="form-group">
                 <label for="request_name">Name:</label>
                 <input type="name" class="form-control" id="request_name" disabled

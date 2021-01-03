@@ -123,6 +123,7 @@ $registrations = findAllRegistrations(false, true);
 if ( isset($CFG->storehide) && strlen($CFG->storehide) > 0 && ! isAdmin() ) {
     $filtered = array();
     foreach($registrations as $name => $tool ) {
+        //echo $name, $tool;
         if ( isset($tool['tool_phase']) &&
            preg_match($CFG->storehide, $tool['tool_phase']) == 1 ) continue;
         $filtered[$name] = $tool;
